@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: gateway-service
+    name: gatewayService
   cloud:
     gateway:
       routes:
@@ -17,7 +17,7 @@ spring:
             - StripPrefix=0
 
         # Route vers project-service
-        - id: project-service
+        - id: ProjectService
           uri: lb://ProjectService
           predicates:
             - Path=/api/projects/**
