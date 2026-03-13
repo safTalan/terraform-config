@@ -18,7 +18,7 @@ spring:
 
         # Route vers project-service
         - id: project-service
-          uri: lb://project-service
+          uri: lb://ProjectService
           predicates:
             - Path=/api/projects/**
 
