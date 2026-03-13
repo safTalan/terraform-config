@@ -20,7 +20,7 @@ spring:
         - id: project-service
           uri: lb://project-service
           predicates:
-            - Path=/api/projects/**
+            - Path=/api/projects/** , /api/auth/** , /api/test/**
 
       # CORS pour Angular
       globalcors:
